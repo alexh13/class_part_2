@@ -123,32 +123,59 @@ a9_1/fast:
 	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/build
 .PHONY : a9_1/fast
 
-main.o: main.cpp.o
+a9_1.o: a9_1.cpp.o
 
-.PHONY : main.o
+.PHONY : a9_1.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/main.cpp.o
-.PHONY : main.cpp.o
+a9_1.cpp.o:
+	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/a9_1.cpp.o
+.PHONY : a9_1.cpp.o
 
-main.i: main.cpp.i
+a9_1.i: a9_1.cpp.i
 
-.PHONY : main.i
+.PHONY : a9_1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/main.cpp.i
-.PHONY : main.cpp.i
+a9_1.cpp.i:
+	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/a9_1.cpp.i
+.PHONY : a9_1.cpp.i
 
-main.s: main.cpp.s
+a9_1.s: a9_1.cpp.s
 
-.PHONY : main.s
+.PHONY : a9_1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/main.cpp.s
-.PHONY : main.cpp.s
+a9_1.cpp.s:
+	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/a9_1.cpp.s
+.PHONY : a9_1.cpp.s
+
+fraction.o: fraction.cpp.o
+
+.PHONY : fraction.o
+
+# target to build an object file
+fraction.cpp.o:
+	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/fraction.cpp.o
+.PHONY : fraction.cpp.o
+
+fraction.i: fraction.cpp.i
+
+.PHONY : fraction.i
+
+# target to preprocess a source file
+fraction.cpp.i:
+	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/fraction.cpp.i
+.PHONY : fraction.cpp.i
+
+fraction.s: fraction.cpp.s
+
+.PHONY : fraction.s
+
+# target to generate assembly for a file
+fraction.cpp.s:
+	$(MAKE) -f CMakeFiles/a9_1.dir/build.make CMakeFiles/a9_1.dir/fraction.cpp.s
+.PHONY : fraction.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... a9_1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... a9_1.o"
+	@echo "... a9_1.i"
+	@echo "... a9_1.s"
+	@echo "... fraction.o"
+	@echo "... fraction.i"
+	@echo "... fraction.s"
 .PHONY : help
 
 

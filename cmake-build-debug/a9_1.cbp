@@ -78,7 +78,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/alexhughes/CLionProjects/a9_1/main.cpp">
+		<Unit filename="/Users/alexhughes/CLionProjects/a9_1/a9_1.cpp">
+			<Option target="a9_1"/>
+		</Unit>
+		<Unit filename="/Users/alexhughes/CLionProjects/a9_1/fraction.cpp">
+			<Option target="a9_1"/>
+		</Unit>
+		<Unit filename="/Users/alexhughes/CLionProjects/a9_1/fraction.h">
 			<Option target="a9_1"/>
 		</Unit>
 		<Unit filename="/Users/alexhughes/CLionProjects/a9_1/CMakeLists.txt">
