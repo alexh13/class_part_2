@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/alexhughes/CLionProjects/a9_1/fraction.cpp
+/Users/alexhughes/CLionProjects/a9_1/a9_1.cpp
 iostream
 -
 fraction.h
 /Users/alexhughes/CLionProjects/a9_1/fraction.h
 
+/Users/alexhughes/CLionProjects/a9_1/fraction.cpp
+iostream
+-
+cassert
+-
+fraction.h
 /Users/alexhughes/CLionProjects/a9_1/fraction.h
+
+/Users/alexhughes/CLionProjects/a9_1/fraction.h
+cassert
+-
 

@@ -3,7 +3,9 @@
 //
 
 #include <iostream>
+#include <cassert>
 #include "fraction.h"
+
 using namespace std;
 
 
@@ -25,6 +27,7 @@ Fraction::Fraction()
 Fraction::Fraction(int a, int b)
 {
     numerator = a;
+    assert(b != 0);
     denominator = b;
     simplify();
 }
@@ -84,7 +87,7 @@ Fraction Fraction::dividedBy(Fraction& f2) const
 
 
 
-bool Fraction::isEqualTo(Fraction f2) const
+bool Fraction::isEqualTo(Fraction f2)
 {
     return (numerator==f2.get_num() && denominator == f2.get_den());
 }
