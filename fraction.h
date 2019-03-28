@@ -13,17 +13,17 @@ class Fraction
 private:
     int numerator;
     int denominator;
-
+    void simplify();
 public:
     Fraction();
     Fraction(int a,int b);
-    Fraction addedTo(Fraction f2);
-    Fraction subtract(Fraction f2);
-    Fraction multipliedBy(Fraction f2);
-    Fraction dividedBy(Fraction& f2);
-    int get_num();
-    int get_den();
-    bool isEqualTo(Fraction f2);
-    void print();
-    void set(int isNumerator, int isDenominator);
+    Fraction addedTo(Fraction f2) const;
+    Fraction subtract(Fraction f2) const;
+    Fraction multipliedBy(Fraction f2) const;
+    Fraction dividedBy(Fraction& f2) const;
+    int get_num() const;
+    int get_den() const;
+    bool isEqualTo(Fraction f2) const;
+    void print() const;
+
 };

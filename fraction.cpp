@@ -34,7 +34,7 @@ Fraction::Fraction(int a, int b)
 
 
 
-Fraction Fraction::addedTo(Fraction f2)
+Fraction Fraction::addedTo(Fraction f2) const
 {
     int new_num = numerator*f2.get_den() + denominator*f2.get_num();
     int new_den = denominator*f2.get_den();
@@ -46,7 +46,7 @@ Fraction Fraction::addedTo(Fraction f2)
 
 
 
-Fraction Fraction::subtract(Fraction f2)
+Fraction Fraction::subtract(Fraction f2) const
 {
     int new_num = numerator*f2.get_den() - denominator*f2.get_num();
     int new_den = denominator*f2.get_den();
@@ -58,7 +58,7 @@ Fraction Fraction::subtract(Fraction f2)
 
 
 
-Fraction Fraction::multipliedBy(Fraction f2)
+Fraction Fraction::multipliedBy(Fraction f2) const
 {
     int new_num = numerator*f2.get_num();
     int new_den = denominator*f2.get_den();
@@ -70,7 +70,7 @@ Fraction Fraction::multipliedBy(Fraction f2)
 
 
 
-Fraction Fraction::dividedBy(Fraction& f2)
+Fraction Fraction::dividedBy(Fraction& f2) const
 {
     int new_num = (this->get_num())*f2.get_den();
     int new_den = (this->get_den())*f2.get_num();
@@ -83,7 +83,7 @@ Fraction Fraction::dividedBy(Fraction& f2)
 
 
 
-bool Fraction::isEqualTo(Fraction f2)
+bool Fraction::isEqualTo(Fraction f2) const
 {
     return (numerator==f2.get_num() && denominator == f2.get_den());
 }
@@ -93,7 +93,7 @@ bool Fraction::isEqualTo(Fraction f2)
 
 
 
-void Fraction::print()
+void Fraction::print() const
 {
     cout << numerator << "/" << denominator;
 }
@@ -103,7 +103,7 @@ void Fraction::print()
 
 
 
-int Fraction::get_num()
+int Fraction::get_num() const
 {
     return numerator;
 }
@@ -113,7 +113,7 @@ int Fraction::get_num()
 
 
 
-int Fraction::get_den()
+int Fraction::get_den() const
 {
     return denominator;
 }
@@ -123,8 +123,18 @@ int Fraction::get_den()
 
 
 
-void Fraction::set(int isNumerator, int isDenominator)
+void Fraction::simplify()
 {
-    numerator = isNumerator;
-    denominator = isDenominator;
+    int a = numerator;
+    int b = denominator;
+    while (a != b) {
+        if (a > b) {
+            a -= b;
+        }else {
+            b -= a;
+        }
+    }
+    numerator = numerator/a;
+    denominator = denominator/a;
 }
+
