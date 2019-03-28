@@ -22,11 +22,11 @@ Fraction::Fraction()
 
 
 
-
 Fraction::Fraction(int a, int b)
 {
     numerator = a;
     denominator = b;
+    simplify();
 }
 
 
@@ -64,6 +64,7 @@ Fraction Fraction::multipliedBy(Fraction f2) const
     int new_den = denominator*f2.get_den();
     return Fraction(new_num,new_den);
 }
+
 
 
 
