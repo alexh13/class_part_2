@@ -41,7 +41,7 @@ Fraction Fraction::addedTo(Fraction f2) const
 {
     int new_num = numerator*f2.get_den() + denominator*f2.get_num();
     int new_den = denominator*f2.get_den();
-    return Fraction(new_num,new_den);
+    return {new_num, new_den};
 }
 
 
@@ -53,7 +53,7 @@ Fraction Fraction::subtract(Fraction f2) const
 {
     int new_num = numerator*f2.get_den() - denominator*f2.get_num();
     int new_den = denominator*f2.get_den();
-    return Fraction(new_num,new_den);
+    return {new_num,new_den};
 }
 
 
@@ -65,7 +65,7 @@ Fraction Fraction::multipliedBy(Fraction f2) const
 {
     int new_num = numerator*f2.get_num();
     int new_den = denominator*f2.get_den();
-    return Fraction(new_num,new_den);
+    return {new_num,new_den};
 }
 
 
@@ -76,8 +76,8 @@ Fraction Fraction::multipliedBy(Fraction f2) const
 
 Fraction Fraction::dividedBy(Fraction& f2) const
 {
-    int new_num = (this->get_num())*f2.get_den();
-    int new_den = (this->get_den())*f2.get_num();
+    int new_num = numerator * f2.get_den();
+    int new_den = denominator * f2.get_num();
     Fraction temp(new_num,new_den);
     return temp;
 }

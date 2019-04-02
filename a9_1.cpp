@@ -36,6 +36,15 @@ int main()
     result.print();
     cout << endl;
 
+    cout << "The product of ";
+    f1.print();
+    cout << " and ";
+    f2.print();
+    cout << " is ";
+    result = f1.multipliedBy(f2);
+    result.print();
+    cout << endl;
+
     cout << "The quotient of ";
     f1.print();
     cout << " and ";
